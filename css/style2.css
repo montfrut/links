@@ -26,18 +26,13 @@
 .page-item-each {
     color: #1F365C;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 14px;  /* Reducción del tamaño de fuente */
     font-weight: 500;
     text-transform: none;
     border-radius: 8px;
-    min-height: 60px;
-    padding: 8px 16px; /* Reducir padding si es necesario */
-    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
-    display: inline-block;
-    width: auto; /* Ajusta el ancho automáticamente */
-    max-width: 100%; /* Asegúrate de que no se desborde en pantallas pequeñas */
+    min-height: 50px;  /* Reducción de la altura mínima del botón */
+    padding: 8px 16px;  /* Ajusta el padding para botones más pequeños */
 }
-
 
 @media (max-width: 480px) {
     .page-item-each {
@@ -125,18 +120,6 @@
     border-radius: 8px;
     display: block;
     margin: 0 auto; /* Centrar la imagen horizontalmente */
-}
-
-@media (max-width: 480px) {
-    .modal-image {
-        width: 70%; /* Reducir tamaño de la imagen a un tercio */
-        height: auto;
-        border-radius: 8px;
-        display: block;
-        margin: 0 auto; /* Centrar la imagen horizontalmente */
-    }
-
-    
 }
 
 /* Estilo para el botón de cierre */
