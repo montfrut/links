@@ -1,85 +1,145 @@
-   
-                    .page-image {
-                object-position: center;
-                
+/*--ESTILOS--*/
+.page-image {
+    object-position: center;
+    
+}
+
+.display-image {
+    border-radius: 50%;
+}
+
+.page-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.page-bioline {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.page-item-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.page-item-each {
+    color: #1F365C;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;  /* Reducción del tamaño de fuente */
+    font-weight: 500;
+    text-transform: none;
+    border-radius: 8px;
+    min-height: 50px;  /* Reducción de la altura mínima del botón */
+    padding: 8px 16px;  /* Ajusta el padding para botones más pequeños */
+}
+
+@media (max-width: 480px) {
+    .page-item-each {
+        font-size: 12px;  /* Reduce el tamaño de fuente en móviles */
+        min-height: 40px;  /* Reduce la altura del botón */
+        padding: 6px 12px;  /* Ajusta el padding para que sea más pequeño en móviles */
+    }
+
+    .fa-2xl {
+        font-size: 1.5em;  /* Ajusta el tamaño de los íconos en móviles */
+    }
+
+    .page-social i {
+        font-size: 1.5em;  /* Reduce el tamaño de los íconos en pantallas pequeñas */
+    }
+}
+
+
+.page-item-wrap {
+                    margin: 16px 0;
             }
-        
-        .display-image {
-            border-radius: 50%;
-        }
 
-        .page-title {
-            font-size: 18px;
-            font-weight: 700;
-        }
+.page-item-wrap:last-child {
+    margin-bottom: 0;
+}
 
-        .page-bioline {
-            font-size: 16px;
-            font-weight: 600;
-        }
+            .page-item-wrap:hover {
+        transform: translate3d(0px, 0px, 0px) scale(1.015);
+    }
 
-        .page-item-title {
-            font-size: 16px;
-            font-weight: 700;
-        }
+    .page-item-wrap{
+    
+    }
 
-        .page-item-each {
-            color: #1F365C;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            text-transform: none;
-            border-radius: 8px;
-            
-                            min-height: 60px;
-                    }
+.page-item {
+    border: 0px solid #FFFFFF;
+    background: #FFFFFF ;
+    border-radius: 8px;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
+}
 
-        .page-item-wrap {
-                            margin: 16px 0;
-                    }
 
-        .page-item-wrap:last-child {
-            margin-bottom: 0;
-        }
-
-                    .page-item-wrap:hover {
-                transform: translate3d(0px, 0px, 0px) scale(1.015);
+.embed-wrap iframe, .embed-wrap-inside {
+                    border-radius: 8px;
             }
-        
-         .page-item-wrap{
-            
-         }
 
-        .page-item {
-            border: 0px solid #FFFFFF;
-            background: #FFFFFF ;
-            border-radius: 8px;
-           box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
-        }
+.link-each-image, .page-item-wrap {
+    border-radius: 8px;
+}
 
-        
-        .embed-wrap iframe, .embed-wrap-inside {
-                            border-radius: 8px;
-                    }
+.page-text-font {
+    font-family: 'Inter', sans-serif;
+    text-transform: none;
+    
+}
 
-        .link-each-image, .page-item-wrap {
-            border-radius: 8px;
-        }
+.page-text-color {
+    color: #1F365C;
+}
 
-        .page-text-font {
-            font-family: 'Inter', sans-serif;
-            text-transform: none;
-            
-        }
+.social-icon-fill path, .social-icon-fill circle, .social-icon-fill rect {
+    fill: #1F365C;
+}
 
-        .page-text-color {
-            color: #1F365C;
-        }
+.page-overlay-btn {
+    border: 2px solid #1F365C;
+}
 
-        .social-icon-fill path, .social-icon-fill circle, .social-icon-fill rect {
-            fill: #1F365C;
-        }
+/*--ESTILOS MODAL--*/
 
-        .page-overlay-btn {
-            border: 2px solid #1F365C;
-        }
+/* Centrar el contenido del modal */
+.modal-content {
+    background-color: #fceac6; /* Color del fondo del modal */
+    margin: 2% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center; /* Centra todo el contenido dentro del modal */
+}
+
+/* Imagen dentro del modal centrada y ajustada */
+.modal-image {
+    width: 50%; /* Reducir tamaño de la imagen a un tercio */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+/* Estilo para el botón de cierre */
+.modal-close-btn {
+    background-color: #333; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 8px 16px;  /* Reducir el padding para que el botón sea más pequeño */
+    font-size: 14px;  /* Reducir el tamaño del texto */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Separar el botón de la imagen */
+    width: auto; /* Elimina cualquier tamaño fijo de ancho */
+}
+
+.modal-close-btn:hover {
+    background-color: #555; /* Cambiar color al pasar el cursor */
+}
+
+.no-margin-bottom {
+    margin-bottom: 0; /* Elimina el margen inferior del primer párrafo */
+}
+
