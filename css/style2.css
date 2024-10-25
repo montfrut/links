@@ -165,6 +165,44 @@
     margin-bottom: 0; /* Elimina el margen inferior del primer párrafo */
 }
 
+/*--LANGUAGE--*/
+
+/* Estilos para el hipervínculo en la esquina superior derecha */
+.language-switch {
+    position: absolute;
+    right: 10px;  /* Ajusta la distancia desde la parte derecha */
+    font-size: 14px;  /* Tamaño de texto */
+    font-family: 'Inter', sans-serif;
+}
+
+.language-switch a {
+    color: #fceac6;  /* Color del texto */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.language-switch a:hover {
+    text-decoration: underline;  /* Subraya el texto al pasar el cursor */
+}
+
+.flag-icon {
+    width: 20px;  /* Tamaño del ícono de la bandera */
+    height: 20px;
+    border-radius: 50%;  /* Hace que la imagen tenga forma circular */
+    margin-left: 8px;  /* Añade espacio entre el texto y la bandera */
+}
+
+@media (max-width: 480px) {
+    .imagen {
+        margin-top: 20px;  /* Mantén el margen inferior para el resto del contenido */
+    }
+
+    .language-switch a {
+        font-size: 12px;  /* Ajustar el tamaño del texto en móviles si es necesario */
+    }
+}
+
 /*--FOOTER--*/
 
 .site-footer {
