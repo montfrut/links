@@ -198,6 +198,13 @@
         margin-top: 20px;  /* Mantén el margen inferior para el resto del contenido */
     }
 
+    .flag-icon {
+        width: 20px;  /* Tamaño del ícono de la bandera */
+        height: 20px;
+        border-radius: 50%;  /* Hace que la imagen tenga forma circular */
+        margin-left: 8px;  /* Añade espacio entre el texto y la bandera */
+    }
+
     .language-switch a {
         font-size: 12px;  /* Ajustar el tamaño del texto en móviles si es necesario */
     }
